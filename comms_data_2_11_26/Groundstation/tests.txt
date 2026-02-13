@@ -1,0 +1,15 @@
+Test order:
+Library
+Distance
+Side
+
+Devices order:
+Old GS
+Loco NSM2
+NSM2
+
+High power tests (only distance):
+High power NSM2
+High power NSM2 LOCO (multiple attempts)
+Old GS
+Elevated NSM2

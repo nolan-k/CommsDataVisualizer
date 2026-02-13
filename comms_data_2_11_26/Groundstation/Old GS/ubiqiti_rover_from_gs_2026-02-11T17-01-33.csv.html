@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_59ddb95fe9a458563547fccaf545f8b2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_59ddb95fe9a458563547fccaf545f8b2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_59ddb95fe9a458563547fccaf545f8b2 = L.map(
+                "map_59ddb95fe9a458563547fccaf545f8b2",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7c39d92fad66aea7bcfd0742c98ffa29 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7c39d92fad66aea7bcfd0742c98ffa29.addTo(map_59ddb95fe9a458563547fccaf545f8b2);
+        
+    
+            var marker_c64b5c964cbe7d26c867e3289d0f6df1 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_59ddb95fe9a458563547fccaf545f8b2);
+        
+    
+            var div_icon_dafbf061faaa50eb56d9e278503c6129 = L.divIcon({
+  "html": "\u003csvg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"-10 -12 30 22\"\u003e\u003cg stroke=\"darkred\" fill=\"darkred\" stroke-width=\"0\" transform=\"scale(1.0)rotate(-9.687499999999995 0 0)\"\u003e\u003cpath d=\"M 0 -1 l 0 2 l 0 0 l 0 3 l 10 -4 l -10 -4 l 0 3 Z\" /\u003e\u003c/g\u003e\u003c/svg\u003e",
+  "iconSize": [30, 22],
+  "iconAnchor": [10, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_b08ef310f3fb5741d69b587a46eb9cd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f40a19987390923f3b32400905e423d0 = $(`<div id="html_f40a19987390923f3b32400905e423d0" style="width: 100.0%; height: 100.0%;">         <b>Date/Time:</b> 2026-02-11T17-01-33<br>         <b>Channel:</b> nan<br>         <b>Frequency:</b> nan MHz<br>         <b>Rx Bitrate:</b> nan Mb/s<br>         <b>Tx Bitrate:</b> nan Mb/s<br>         <b>Signal:</b> nan dBm<br>         <b>Noise:</b> nan dBm<br>         <b>Heading:</b> 80.3125 degrees<br>         <b>Tx Power</b> nan dBm<br>         </div>`)[0];
+                popup_b08ef310f3fb5741d69b587a46eb9cd3.setContent(html_f40a19987390923f3b32400905e423d0);
+            
+        
+
+        marker_c64b5c964cbe7d26c867e3289d0f6df1.bindPopup(popup_b08ef310f3fb5741d69b587a46eb9cd3)
+        ;
+
+        
+    
+    
+                marker_c64b5c964cbe7d26c867e3289d0f6df1.setIcon(div_icon_dafbf061faaa50eb56d9e278503c6129);
+            
+    
+            var marker_2ec71738b68419fdafd68f954710731e = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_59ddb95fe9a458563547fccaf545f8b2);
+        
+    
+            var div_icon_b1c496a31f3489c7c7edc0db7177c92a = L.divIcon({
+  "html": "\u003csvg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"-10 -12 30 22\"\u003e\u003cg stroke=\"darkred\" fill=\"darkred\" stroke-width=\"0\" transform=\"scale(1.0)rotate(-9.687499999999995 0 0)\"\u003e\u003cpath d=\"M 0 -1 l 0 2 l 0 0 l 0 3 l 10 -4 l -10 -4 l 0 3 Z\" /\u003e\u003c/g\u003e\u003c/svg\u003e",
+  "iconSize": [30, 22],
+  "iconAnchor": [10, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_a86a1799c314ca38741c97782c21b053 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b708e76dbb1a2d9791bae976b720978c = $(`<div id="html_b708e76dbb1a2d9791bae976b720978c" style="width: 100.0%; height: 100.0%;">         <b>Date/Time:</b> 2026-02-11T17-01-47<br>         <b>Channel:</b> nan<br>         <b>Frequency:</b> nan MHz<br>         <b>Rx Bitrate:</b> nan Mb/s<br>         <b>Tx Bitrate:</b> nan Mb/s<br>         <b>Signal:</b> nan dBm<br>         <b>Noise:</b> nan dBm<br>         <b>Heading:</b> 80.3125 degrees<br>         <b>Tx Power</b> nan dBm<br>         </div>`)[0];
+                popup_a86a1799c314ca38741c97782c21b053.setContent(html_b708e76dbb1a2d9791bae976b720978c);
+            
+        
+
+        marker_2ec71738b68419fdafd68f954710731e.bindPopup(popup_a86a1799c314ca38741c97782c21b053)
+        ;
+
+        
+    
+    
+                marker_2ec71738b68419fdafd68f954710731e.setIcon(div_icon_b1c496a31f3489c7c7edc0db7177c92a);
+            
+    
+            var marker_8a1ce2d108e1a0c0360a40f258a6fb3d = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(map_59ddb95fe9a458563547fccaf545f8b2);
+        
+    
+            var div_icon_0b342cd367a9a3e436266e35f86b7c81 = L.divIcon({
+  "html": "\u003csvg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"-10 -12 30 22\"\u003e\u003cg stroke=\"darkred\" fill=\"darkred\" stroke-width=\"0\" transform=\"scale(1.0)rotate(-9.687499999999995 0 0)\"\u003e\u003cpath d=\"M 0 -1 l 0 2 l 0 0 l 0 3 l 10 -4 l -10 -4 l 0 3 Z\" /\u003e\u003c/g\u003e\u003c/svg\u003e",
+  "iconSize": [30, 22],
+  "iconAnchor": [10, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_5e7759e9801d97c21f02f9a5d3f0ebfd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_948c3cde5776d34a21e2ae636603cf33 = $(`<div id="html_948c3cde5776d34a21e2ae636603cf33" style="width: 100.0%; height: 100.0%;">         <b>Date/Time:</b> 2026-02-11T17-01-50<br>         <b>Channel:</b> nan<br>         <b>Frequency:</b> nan MHz<br>         <b>Rx Bitrate:</b> nan Mb/s<br>         <b>Tx Bitrate:</b> nan Mb/s<br>         <b>Signal:</b> nan dBm<br>         <b>Noise:</b> nan dBm<br>         <b>Heading:</b> 80.3125 degrees<br>         <b>Tx Power</b> nan dBm<br>         </div>`)[0];
+                popup_5e7759e9801d97c21f02f9a5d3f0ebfd.setContent(html_948c3cde5776d34a21e2ae636603cf33);
+            
+        
+
+        marker_8a1ce2d108e1a0c0360a40f258a6fb3d.bindPopup(popup_5e7759e9801d97c21f02f9a5d3f0ebfd)
+        ;
+
+        
+    
+    
+                marker_8a1ce2d108e1a0c0360a40f258a6fb3d.setIcon(div_icon_0b342cd367a9a3e436266e35f86b7c81);
+            
+</script>
+</html>

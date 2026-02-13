@@ -1,0 +1,10 @@
+datetime,latitude,longitude,heading,signalLevel,noiseLevel,frequency,channel,rxbitrate,txbitrate,txpower,channelWidth,connected,syncing
+2026-02-11T16-08-16,0.0,0.0,-155.0625,None,None,None,None,None,None,None,None,False,False
+2026-02-11T16-08-21,0.0,0.0,-155.0,-71,-90,2452,9,60.0,6.5,21.0,None,True,True
+2026-02-11T16-08-26,0.0,0.0,-155.0,-70,-96,2452,9,13.5,6.5,21.0,None,True,True
+2026-02-11T16-08-31,0.0,0.0,-155.0,-70,-90,2452,9,27.0,6.5,21.0,None,True,True
+2026-02-11T16-08-36,0.0,0.0,-155.0,-69,-90,2452,9,54.0,6.5,21.0,None,True,True
+2026-02-11T16-08-41,0.0,0.0,-155.0,-68,-96,2452,9,6.5,6.5,21.0,None,True,True
+2026-02-11T16-08-46,0.0,0.0,-155.0,-71,-90,2452,9,6.5,13.5,21.0,None,True,True
+2026-02-11T16-08-51,0.0,0.0,-155.0625,-70,-90,2452,9,6.5,6.5,21.0,None,True,True
+2026-02-11T16-08-56,0.0,0.0,-155.0625,-69,-90,2452,9,6.5,6.5,21.0,None,True,True

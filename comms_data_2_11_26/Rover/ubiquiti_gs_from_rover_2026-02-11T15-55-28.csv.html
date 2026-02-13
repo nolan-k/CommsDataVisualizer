@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_91b25835367fb043c78b029153aa68db {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_91b25835367fb043c78b029153aa68db" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_91b25835367fb043c78b029153aa68db = L.map(
+                "map_91b25835367fb043c78b029153aa68db",
+                {
+                    center: [44.56675202380952, -123.27438540476192],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e8229ec07f731a60ec4d89e999eb5463 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e8229ec07f731a60ec4d89e999eb5463.addTo(map_91b25835367fb043c78b029153aa68db);
+        
+    
+            var marker_b253268a8564f67286303dedd454f9aa = L.marker(
+                [44.56675833333334, -123.27438633333334],
+                {
+}
+            ).addTo(map_91b25835367fb043c78b029153aa68db);
+        
+    
+            var div_icon_ce78d4e52599771b4367f5e9ed90068f = L.divIcon({
+  "html": "\u003csvg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"-13 -10 23 30\"\u003e\u003cg stroke=\"darkred\" fill=\"darkred\" stroke-width=\"0\" transform=\"scale(1.0)rotate(-255.6875 0 0)\"\u003e\u003cpath d=\"M 0 -1 l 0 2 l 0 0 l 0 3 l 10 -4 l -10 -4 l 0 3 Z\" /\u003e\u003c/g\u003e\u003c/svg\u003e",
+  "iconSize": [23, 30],
+  "iconAnchor": [13, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_c9e5eb4137c82d26dd8a9cd014b4f980 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c683009e3c74b68ce13fce357adbb4a0 = $(`<div id="html_c683009e3c74b68ce13fce357adbb4a0" style="width: 100.0%; height: 100.0%;">         <b>Date/Time:</b> 2026-02-11T15-55-28<br>         <b>Channel:</b> nan<br>         <b>Frequency:</b> nan MHz<br>         <b>Rx Bitrate:</b> nan Mb/s<br>         <b>Tx Bitrate:</b> nan Mb/s<br>         <b>Signal:</b> nan dBm<br>         <b>Noise:</b> nan dBm<br>         <b>Heading:</b> -165.6875 degrees<br>         <b>Tx Power</b> nan dBm<br>         </div>`)[0];
+                popup_c9e5eb4137c82d26dd8a9cd014b4f980.setContent(html_c683009e3c74b68ce13fce357adbb4a0);
+            
+        
+
+        marker_b253268a8564f67286303dedd454f9aa.bindPopup(popup_c9e5eb4137c82d26dd8a9cd014b4f980)
+        ;
+
+        
+    
+    
+                marker_b253268a8564f67286303dedd454f9aa.setIcon(div_icon_ce78d4e52599771b4367f5e9ed90068f);
+            
+    
+            var marker_4e33b80da4854ed0b1461b795fb746bf = L.marker(
+                [44.56675499999999, -123.2743855],
+                {
+}
+            ).addTo(map_91b25835367fb043c78b029153aa68db);
+        
+    
+            var div_icon_2950c500b8444bea150dbb4f52ab75ee = L.divIcon({
+  "html": "\u003csvg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"-13 -10 23 30\"\u003e\u003cg stroke=\"green\" fill=\"green\" stroke-width=\"0\" transform=\"scale(1.0)rotate(-255.6875 0 0)\"\u003e\u003cpath d=\"M 0 -1 l 0 2 l 0 0 l 0 3 l 10 -4 l -10 -4 l 0 3 Z\" /\u003e\u003c/g\u003e\u003c/svg\u003e",
+  "iconSize": [23, 30],
+  "iconAnchor": [13, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_ed7768bb0eb1280b5f4f32e679357c37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7cb2d7da3d05bf831f53cf4156f12b5 = $(`<div id="html_c7cb2d7da3d05bf831f53cf4156f12b5" style="width: 100.0%; height: 100.0%;">         <b>Date/Time:</b> 2026-02-11T15-55-33<br>         <b>Channel:</b> 9.0<br>         <b>Frequency:</b> 2452.0 MHz<br>         <b>Rx Bitrate:</b> 60.0 Mb/s<br>         <b>Tx Bitrate:</b> 162.0 Mb/s<br>         <b>Signal:</b> -66.0 dBm<br>         <b>Noise:</b> -88.0 dBm<br>         <b>Heading:</b> -165.6875 degrees<br>         <b>Tx Power</b> 18.0 dBm<br>         </div>`)[0];
+                popup_ed7768bb0eb1280b5f4f32e679357c37.setContent(html_c7cb2d7da3d05bf831f53cf4156f12b5);
+            
+        
+
+        marker_4e33b80da4854ed0b1461b795fb746bf.bindPopup(popup_ed7768bb0eb1280b5f4f32e679357c37)
+        ;
+
+        
+    
+    
+                marker_4e33b80da4854ed0b1461b795fb746bf.setIcon(div_icon_2950c500b8444bea150dbb4f52ab75ee);
+            
+    
+            var marker_b05d5fc94affba6a4013ac8f6b8d4df5 = L.marker(
+                [44.5667525, -123.27438583333333],
+                {
+}
+            ).addTo(map_91b25835367fb043c78b029153aa68db);
+        
+    
+            var div_icon_ddc8a83251b73b0510c810e6577a32a1 = L.divIcon({
+  "html": "\u003csvg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"-13 -10 23 30\"\u003e\u003cg stroke=\"green\" fill=\"green\" stroke-width=\"0\" transform=\"scale(1.0)rotate(-255.6875 0 0)\"\u003e\u003cpath d=\"M 0 -1 l 0 2 l 0 0 l 0 3 l 10 -4 l -10 -4 l 0 3 Z\" /\u003e\u003c/g\u003e\u003c/svg\u003e",
+  "iconSize": [23, 30],
+  "iconAnchor": [13, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_a2fb62faecaf1d5bd62308107e62cb4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0852b088fa4d7526da60e9188da13e4f = $(`<div id="html_0852b088fa4d7526da60e9188da13e4f" style="width: 100.0%; height: 100.0%;">         <b>Date/Time:</b> 2026-02-11T15-55-38<br>         <b>Channel:</b> 9.0<br>         <b>Frequency:</b> 2452.0 MHz<br>         <b>Rx Bitrate:</b> 81.0 Mb/s<br>         <b>Tx Bitrate:</b> 180.0 Mb/s<br>         <b>Signal:</b> -64.0 dBm<br>         <b>Noise:</b> -88.0 dBm<br>         <b>Heading:</b> -165.6875 degrees<br>         <b>Tx Power</b> 18.0 dBm<br>         </div>`)[0];
+                popup_a2fb62faecaf1d5bd62308107e62cb4c.setContent(html_0852b088fa4d7526da60e9188da13e4f);
+            
+        
+
+        marker_b05d5fc94affba6a4013ac8f6b8d4df5.bindPopup(popup_a2fb62faecaf1d5bd62308107e62cb4c)
+        ;
+
+        
+    
+    
+                marker_b05d5fc94affba6a4013ac8f6b8d4df5.setIcon(div_icon_ddc8a83251b73b0510c810e6577a32a1);
+            
+    
+            var marker_5d4a5b2a450fc199daaaf08e88bfd093 = L.marker(
+                [44.56675033333333, -123.2743855],
+                {
+}
+            ).addTo(map_91b25835367fb043c78b029153aa68db);
+        
+    
+            var div_icon_689854ab6f4488b3007434758c96a970 = L.divIcon({
+  "html": "\u003csvg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"-13 -10 23 30\"\u003e\u003cg stroke=\"green\" fill=\"green\" stroke-width=\"0\" transform=\"scale(1.0)rotate(-255.6875 0 0)\"\u003e\u003cpath d=\"M 0 -1 l 0 2 l 0 0 l 0 3 l 10 -4 l -10 -4 l 0 3 Z\" /\u003e\u003c/g\u003e\u003c/svg\u003e",
+  "iconSize": [23, 30],
+  "iconAnchor": [13, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_fbac37a115de30d4da3b3a5cfb0c829d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae9dac04d87f7a34fadc005b31415e70 = $(`<div id="html_ae9dac04d87f7a34fadc005b31415e70" style="width: 100.0%; height: 100.0%;">         <b>Date/Time:</b> 2026-02-11T15-55-43<br>         <b>Channel:</b> 9.0<br>         <b>Frequency:</b> 2452.0 MHz<br>         <b>Rx Bitrate:</b> 54.0 Mb/s<br>         <b>Tx Bitrate:</b> 216.0 Mb/s<br>         <b>Signal:</b> -65.0 dBm<br>         <b>Noise:</b> -88.0 dBm<br>         <b>Heading:</b> -165.6875 degrees<br>         <b>Tx Power</b> 18.0 dBm<br>         </div>`)[0];
+                popup_fbac37a115de30d4da3b3a5cfb0c829d.setContent(html_ae9dac04d87f7a34fadc005b31415e70);
+            
+        
+
+        marker_5d4a5b2a450fc199daaaf08e88bfd093.bindPopup(popup_fbac37a115de30d4da3b3a5cfb0c829d)
+        ;
+
+        
+    
+    
+                marker_5d4a5b2a450fc199daaaf08e88bfd093.setIcon(div_icon_689854ab6f4488b3007434758c96a970);
+            
+    
+            var marker_a9c45fdc3d2c425e7f2430d3a16299b9 = L.marker(
+                [44.56674933333333, -123.27438516666668],
+                {
+}
+            ).addTo(map_91b25835367fb043c78b029153aa68db);
+        
+    
+            var div_icon_64aa152e738b6fc5ce711dad93ae86dd = L.divIcon({
+  "html": "\u003csvg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"-13 -10 23 30\"\u003e\u003cg stroke=\"lightgreen\" fill=\"lightgreen\" stroke-width=\"0\" transform=\"scale(1.0)rotate(-255.6875 0 0)\"\u003e\u003cpath d=\"M 0 -1 l 0 2 l 0 0 l 0 3 l 10 -4 l -10 -4 l 0 3 Z\" /\u003e\u003c/g\u003e\u003c/svg\u003e",
+  "iconSize": [23, 30],
+  "iconAnchor": [13, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_fc0ce5e3db38e1fb0bdcec7bf7104886 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_696c76de0dec242f66b6eec463c1b2d0 = $(`<div id="html_696c76de0dec242f66b6eec463c1b2d0" style="width: 100.0%; height: 100.0%;">         <b>Date/Time:</b> 2026-02-11T15-55-48<br>         <b>Channel:</b> 9.0<br>         <b>Frequency:</b> 2452.0 MHz<br>         <b>Rx Bitrate:</b> 40.5 Mb/s<br>         <b>Tx Bitrate:</b> 180.0 Mb/s<br>         <b>Signal:</b> -65.0 dBm<br>         <b>Noise:</b> -88.0 dBm<br>         <b>Heading:</b> -165.6875 degrees<br>         <b>Tx Power</b> 18.0 dBm<br>         </div>`)[0];
+                popup_fc0ce5e3db38e1fb0bdcec7bf7104886.setContent(html_696c76de0dec242f66b6eec463c1b2d0);
+            
+        
+
+        marker_a9c45fdc3d2c425e7f2430d3a16299b9.bindPopup(popup_fc0ce5e3db38e1fb0bdcec7bf7104886)
+        ;
+
+        
+    
+    
+                marker_a9c45fdc3d2c425e7f2430d3a16299b9.setIcon(div_icon_64aa152e738b6fc5ce711dad93ae86dd);
+            
+    
+            var marker_ca04da60f85ae93f0459a38fb5b0f7df = L.marker(
+                [44.56674933333333, -123.2743845],
+                {
+}
+            ).addTo(map_91b25835367fb043c78b029153aa68db);
+        
+    
+            var div_icon_a5adcdb99f0ae0f6b549a0db06845bae = L.divIcon({
+  "html": "\u003csvg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"-13 -10 23 30\"\u003e\u003cg stroke=\"lightgreen\" fill=\"lightgreen\" stroke-width=\"0\" transform=\"scale(1.0)rotate(-255.6875 0 0)\"\u003e\u003cpath d=\"M 0 -1 l 0 2 l 0 0 l 0 3 l 10 -4 l -10 -4 l 0 3 Z\" /\u003e\u003c/g\u003e\u003c/svg\u003e",
+  "iconSize": [23, 30],
+  "iconAnchor": [13, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_7f73aad45e64609837a579d6e71bc831 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c22553890bd4277f890eba2886ce3dd = $(`<div id="html_4c22553890bd4277f890eba2886ce3dd" style="width: 100.0%; height: 100.0%;">         <b>Date/Time:</b> 2026-02-11T15-55-53<br>         <b>Channel:</b> 9.0<br>         <b>Frequency:</b> 2452.0 MHz<br>         <b>Rx Bitrate:</b> 40.5 Mb/s<br>         <b>Tx Bitrate:</b> 180.0 Mb/s<br>         <b>Signal:</b> -65.0 dBm<br>         <b>Noise:</b> -88.0 dBm<br>         <b>Heading:</b> -165.6875 degrees<br>         <b>Tx Power</b> 18.0 dBm<br>         </div>`)[0];
+                popup_7f73aad45e64609837a579d6e71bc831.setContent(html_4c22553890bd4277f890eba2886ce3dd);
+            
+        
+
+        marker_ca04da60f85ae93f0459a38fb5b0f7df.bindPopup(popup_7f73aad45e64609837a579d6e71bc831)
+        ;
+
+        
+    
+    
+                marker_ca04da60f85ae93f0459a38fb5b0f7df.setIcon(div_icon_a5adcdb99f0ae0f6b549a0db06845bae);
+            
+    
+            var marker_98ac3bf42525d2f5a2661f6bcaba6ce3 = L.marker(
+                [44.56674933333333, -123.274385],
+                {
+}
+            ).addTo(map_91b25835367fb043c78b029153aa68db);
+        
+    
+            var div_icon_52d458faff0de7b2b426e49739111852 = L.divIcon({
+  "html": "\u003csvg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"-13 -10 23 30\"\u003e\u003cg stroke=\"green\" fill=\"green\" stroke-width=\"0\" transform=\"scale(1.0)rotate(-255.6875 0 0)\"\u003e\u003cpath d=\"M 0 -1 l 0 2 l 0 0 l 0 3 l 10 -4 l -10 -4 l 0 3 Z\" /\u003e\u003c/g\u003e\u003c/svg\u003e",
+  "iconSize": [23, 30],
+  "iconAnchor": [13, 10],
+  "className": "empty",
+});
+        
+    
+        var popup_76175289f1108010f656ade5b4d87df8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed1ab37ac6cd78b305577e9b4958b66e = $(`<div id="html_ed1ab37ac6cd78b305577e9b4958b66e" style="width: 100.0%; height: 100.0%;">         <b>Date/Time:</b> 2026-02-11T15-55-58<br>         <b>Channel:</b> 9.0<br>         <b>Frequency:</b> 2452.0 MHz<br>         <b>Rx Bitrate:</b> 81.0 Mb/s<br>         <b>Tx Bitrate:</b> 216.0 Mb/s<br>         <b>Signal:</b> -63.0 dBm<br>         <b>Noise:</b> -88.0 dBm<br>         <b>Heading:</b> -165.6875 degrees<br>         <b>Tx Power</b> 18.0 dBm<br>         </div>`)[0];
+                popup_76175289f1108010f656ade5b4d87df8.setContent(html_ed1ab37ac6cd78b305577e9b4958b66e);
+            
+        
+
+        marker_98ac3bf42525d2f5a2661f6bcaba6ce3.bindPopup(popup_76175289f1108010f656ade5b4d87df8)
+        ;
+
+        
+    
+    
+                marker_98ac3bf42525d2f5a2661f6bcaba6ce3.setIcon(div_icon_52d458faff0de7b2b426e49739111852);
+            
+</script>
+</html>

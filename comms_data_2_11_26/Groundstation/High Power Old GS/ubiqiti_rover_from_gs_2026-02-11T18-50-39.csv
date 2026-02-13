@@ -1,0 +1,3 @@
+datetime,latitude,longitude,heading,signalLevel,noiseLevel,frequency,channel,rxbitrate,txbitrate,txpower,channelWidth,connected,syncing
+2026-02-11T18-50-39,0.0,0.0,0.0,None,None,None,None,None,None,None,None,False,False
+2026-02-11T18-50-44,44.566846166666664,-123.27436916666666,0.0,None,None,None,None,None,None,None,None,False,False
