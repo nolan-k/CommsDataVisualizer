@@ -74,7 +74,27 @@ def bitrate_color(bitrate):
     else:
         return "darkred"
     
-
+def bitrate_color_halow(bitrate):
+    try:
+        bitrate = float(bitrate)
+    except (ValueError, TypeError):
+        return "gray"
+    
+    if bitrate == 0:
+        return "black"
+    
+    if bitrate >= 29:
+        return "green"
+    elif bitrate >= 20:
+        return "lightgreen"
+    elif bitrate >= 15:
+        return "yellow"
+    elif bitrate >= 10:
+        return "orange"
+    elif bitrate >= 5:
+        return "red"
+    else:
+        return "darkred"
 
 def preprocess_data(df):
     """
@@ -202,7 +222,7 @@ def generate_map(csv_file, output_html="wireless_map.html"):
             icon = ArrowIcon (
                 10,
                 math.radians(row['heading']),
-                color=bitrate_color(row["rxbitrate"])
+                color=bitrate_color_halow(row["txbitrate"])
             ),
             popup=popup_html
         ).add_to(m)
